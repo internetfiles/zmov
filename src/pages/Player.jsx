@@ -8,7 +8,7 @@ export default function Player() {
     const [totalSeasons, setTotalSeasons] = useState(0);
     const [season, setSeason] = useState(null);
     const [episode, setEpisode] = useState(null);
-    const [selectedServer, setSelectedServer] = useState('PRO');
+    const [selectedServer, setSelectedServer] = useState('ME');
 
     const apiKey = import.meta.env.VITE_API_KEY;
 
