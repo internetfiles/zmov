@@ -13,6 +13,7 @@ export default function Player() {
     const apiKey = import.meta.env.VITE_API_KEY;
 
     const serverURLs = {
+    ME: `https://vidsrc.xyz/embed/${type}/${id}`,
         PRO: `https://vidsrc.pro/embed/${type}/${id}`,
         TO: `https://vidsrc.to/embed/${type}/${id}`,
         SFLIX: `https://watch.streamflix.one/${type}/${id}/watch?server=1`,
@@ -144,6 +145,7 @@ export default function Player() {
                         onChange={(e) => setSelectedServer(e.target.value)} 
                         id="server-select"
                     >
+                    <option value="ME">ME</option>
                         <option value="PRO">PRO</option>
                         <option value="TO">TO</option>
                         <option value="SFLIX">SFLIX</option>
